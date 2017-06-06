@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>醒吾科大招生</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <img src="0.gif" class="img-rounded" alt="Cinque Terre" width="304" height="236" />
+        <h1>圖形介紹</h1>
+        <p>請看以下3種</p>
+        <script>
+            $(document).ready(function () {
+                $("#hide").click(function () {
+                    $("img").hide();
+                });
+                $("#show").click(function () {
+                    $("img").show();
+                });
+            });
+        </script>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Rounded Corners</h3>
+                <img src="1.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236" />
+            </div>
+            <div class="col-sm-4">
+                <h3>Circle</h3>
+                <img src="2.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236" />
+            </div>
+            <div class="col-sm-4">
+                <h3>Thumbnail</h3>
+                <img src="3.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236" />
+            </div>
+        </div>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+    </div>
+</body>
+</html>
